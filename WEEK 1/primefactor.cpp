@@ -1,5 +1,4 @@
 #include <iostream>
-#include <limits.h>
 using namespace std;
 
  void printPrimeFactors(int n)
@@ -23,6 +22,8 @@ using namespace std;
 	cout<<endl;
 }
 
+
+//more efficient
 void printPrimeFactors2(int n){
     if(n<=1){return;}
     while(n%2==0){
@@ -44,7 +45,7 @@ void printPrimeFactors2(int n){
         }
         if(n>3){cout<<n;}
     }
-}
+} 
 
 int main() {
     
